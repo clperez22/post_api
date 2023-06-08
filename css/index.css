@@ -1,7 +1,111 @@
 .post {
     margin-bottom: 20px;
+    
     border: solid 0.2rem black;
     padding: 10px;
     background-color: rgb(221, 221, 221);
     border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.5rem;
   }
+  .fondo{
+    height: 8rem;
+    background-color: rgb(221, 221, 221);
+    margin-bottom: 5rem;
+  }
+  .imgp{
+    
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin-top: 5rem;
+    margin-left: 3rem ;
+  }
+  .luo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 13rem;
+    
+    
+    width: 1.5rem;
+    height: 15rem;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 9.3rem;
+    margin-left: 18rem;
+    width: 3.2rem;
+    height: 1.4rem;
+    border-radius: 0.5rem;
+    padding-top: 0.1rem;
+    font-size: 0.7rem;
+    color: bisque;
+    background-color: black;
+   
+}
+.quiens{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 15.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+   
+}
+.usuario h2{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.usuario h3{
+    margin-top: -1rem;
+    font-size: 0.7rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+}
+.nom1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: 3rem;
+    border-bottom: solid 0.3rem black;
+   
+}
+.linee{
+    width: 3rem;
+    height: 2.8rem;
+    margin-left: 1rem;
+
+    
+}
+.nom2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: 10rem;
+    width: 2rem;
+    height: 2rem;
+}
+.nom3{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: 16rem;
+    width: 2rem;
+    height: 2rem;
+}
+.line{
+    
+   
+    margin-top: 10rem;
+    border-bottom: solid 0.1rem black;
+    
+}

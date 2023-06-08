@@ -1,26 +1,45 @@
-// Obtener los datos de los posts de la api
- fetch('https://jsonplaceholder.typicode.com/posts')
- .then(response => response.json())
- .then(posts => {
+let apiiUrl = "https://jsonplaceholder.typicode.com/users/"
+ 
 
+async function actualizarGato2(apii){
+    let hola2 = await fetch(apii); 
+    let datoo = await hola2.json();
+
+    let ddd = document.querySelector(".usuario")
     
-   //muestra los post
-   let postt = document.getElementById('postt');
+ 
+        let div = document.createElement("div")
 
-   // va insertar cada div en el contenedor
-   posts.forEach(post => {
-     let postDiv = document.createElement('div');
-     postDiv.className = 'post';
+        div.innerHTML= div.innerHTML= "<h2>"+ datoo[2]["username"]+"</h2>"+
+                                        "<h3>"+"@" + datoo[2]["name"]+"</h3>"
+        ddd.appendChild(div);
 
-     let title = document.createElement('h2');
-     title.innerText = post.title;
+ }
 
-     let content = document.createElement('p');
-     content.innerText = post.body;
+actualizarGato2(apiiUrl);
 
-     postDiv.appendChild(title);
-     postDiv.appendChild(content);
 
-     postt.appendChild(postDiv);
-   });
- });
+
+
+let apiUrl = "https://jsonplaceholder.typicode.com/posts"
+ 
+    
+      async function actualizarGato(api){
+        let hola1 = await fetch(api); 
+        let dato = await hola1.json();
+        let dd = document.querySelector(".usuario")
+        
+        
+        dato.forEach(element => {
+            let div = document.createElement("div")
+    
+            div.innerHTML= "<h1>"+ element["title"]+"</h1>"+
+                            "<h1>" + element["body"]+"</h1>"
+
+            div.classList.add("post");
+            dd.appendChild(div); 
+    })
+  
+     }
+   
+    actualizarGato(apiUrl);
